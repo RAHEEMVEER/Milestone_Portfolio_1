@@ -36,10 +36,10 @@ export default function Home() {
         <h3>And I'm a <span className="multiple-text"><Typewriter options={{strings: ["Web Developer", "Next.JS Developer", "Frontend Developer"], autoStart: true, loop: true, delay: 50, deleteSpeed: 30,}}/></span></h3>
         <p>Creative Front-End Developer Crafting Engaging User Experiences with Modern Web Technologies.</p>
         <div className="social-media">
-          <a href="https://www.facebook.com/share/19ZseuZweL/" target="_blank"><i className="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/raheem_veer/profilecard/?igsh=cXd0aW56bnFzdzZ5" target="_blank"><i className="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/abdul-raheem-4538452b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i className="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/RAHEEMVEER" target="_blank"><i className='bx bxl-github'></i></a>
+          <a href="https://www.facebook.com/share/19ZseuZweL/" target="_blank" rel="noopener noreferrer"><i className="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/raheem_veer/profilecard/?igsh=cXd0aW56bnFzdzZ5" target="_blank" rel="noopener noreferrer"><i className="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/abdul-raheem-4538452b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i className="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/RAHEEMVEER" target="_blank" rel="noopener noreferrer"><i className='bx bxl-github'></i></a>
         </div>
         <a href="#contact" className="btn">Hire Me</a>
       </div>
