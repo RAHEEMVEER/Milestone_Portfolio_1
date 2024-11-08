@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from 'react';
+import { useEffect } from "react";
 import "../style.css";
 import Image from "next/image";
 import myPic from "../../public/images/my-pic.png";
