@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Portfolio from "./Components/Portfolio";
