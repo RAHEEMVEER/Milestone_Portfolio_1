@@ -27,7 +27,7 @@ export async function POST(req: NextRequest) {
       from:gmailAddress,
       to: gmailAddress,
       subject: `New Contact Form Submission from ${name}`,
-      text: `Hey RAHEEM!\nYou Have Received A New Message From Your Website.\n\n\nName => ${name}\n\nEmail => ${email}\n\nMobile => ${mobile}\n\nAddress => ${address}'\n\nMessage => ${message}`,
+      text: `Hey RAHEEM!\nYou Have Received A New Message From Your Website.\n\n\nName => ${name}\n\nEmail => ${email}\n\nMobile => ${mobile}\n\nAddress => ${address}\n\nMessage => ${message}`,
       replyTo: email, 
     };
 
