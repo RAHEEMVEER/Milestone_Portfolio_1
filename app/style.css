@@ -431,8 +431,8 @@ i#tailwind {
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 85%;
-  height: 400px;
+  width: 80%;
+  height: 360px;
   background: #fff;
   border-radius: 20px;
   animation: popup 1s ease-in-out;
@@ -469,16 +469,15 @@ i#tailwind {
   color: rgb(9, 224, 9);
 }
 .submit-container h2 {
-  margin-top: 20px;
+  margin-top: 10px;
   color: #1f242d;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 .submit-container p {
-  margin-top: 20px;
   font-size: 1.8rem;
   text-align: center;
   color: black;
-  margin: 0px 50px;
+  margin: -10px 50px;
 }
 .submit-container button {
   width: 120px;
@@ -525,6 +524,9 @@ i#tailwind {
   }
   .about-image .image-shape img {
     margin-left: 0px;
+  }
+  .submit-container {
+    height: 330px;
   }
 }
 @media screen and (max-width: 1115px) {
@@ -674,11 +676,14 @@ i#tailwind {
     margin-top: 30px;
     padding: 0px 10px;
   }
+  .submit-container {
+    height: 350px;
+  }
   .submit-container i {
     font-size: 90px;
   }
-  .submit-container {
-    height: 370px;
+  .submit-container p{
+    margin: 0px 20px;
   }
   .contact {
     padding-left: 10px;
@@ -704,6 +709,14 @@ i#tailwind {
     margin-left: 3px;
   }
 }
+@media screen and (max-width: 553px) {
+  .submit-container{
+    height: 350px;
+  }
+  .submit-container button{
+    margin-top: 25px;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
@@ -716,10 +729,17 @@ i#tailwind {
   }
   .submit-container {
     width: 90%;
+    height: 310px;
   }
   .submit-container i {
     font-size: 70px;
     margin-top: -37px;
+  }
+  .submit-container button{
+    width: 90px;
+    height: 38px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .image-shape {
     width: 270px;
@@ -749,5 +769,14 @@ i#tailwind {
   .footer {
     flex-direction: column-reverse;
     gap: 15px;
+  }
+}
+@media (max-width: 330px) {
+  .submit-container {
+    width: 95%;
+    height: 320px;
+  }
+  .submit-container p{
+    margin: 0px 5px;
   }
 }
