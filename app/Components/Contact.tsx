@@ -14,6 +14,7 @@ interface FormData {
 }
 
 export default function Contact() {
+  const [userName, setUserName] = useState<string>("")
   const [msgCall, setmsgCall] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
@@ -25,6 +26,7 @@ export default function Contact() {
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    setUserName(formData.name)
   };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -57,7 +59,7 @@ export default function Contact() {
     <section className="contact" id="contact">
       <h2 className="heading">Contact <span>Me</span></h2>
       <form onSubmit={handleSubmit}>
-      {msgCall === true ? <SubmitMsg Name={formData.name} close={closePopup}/> : null}
+      {msgCall === true ? <SubmitMsg Name={userName} close={closePopup}/> : null}
         <div className="input-box">
           <input type="text" name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
           <input type="email" name="email" placeholder="Email Address" value={formData.email} onChange={handleChange} required />

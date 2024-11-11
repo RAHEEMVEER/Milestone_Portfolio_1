@@ -471,7 +471,8 @@ i#tailwind {
 .submit-container h2 {
   margin-top: 10px;
   color: #1f242d;
-  font-size: 2.7rem;
+  text-wrap: wrap;
+  font-size: 2.6rem;
 }
 .submit-container p {
   font-size: 1.8rem;

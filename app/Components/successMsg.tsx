@@ -9,6 +9,7 @@ interface SubmitMsgProps {
 }
 
 const SubmitMsg: React.FC<SubmitMsgProps> = ({ Name, close }) => {
+  console.log(Name)
   return (
     <div className="submit-container">
       <i className="bx bx-check"></i>
