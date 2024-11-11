@@ -29,7 +29,7 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const res = await fetch("https://formspree.io/f/mbljojde", {
+    const res = await fetch("api/Email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
