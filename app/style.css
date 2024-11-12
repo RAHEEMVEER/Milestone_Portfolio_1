@@ -118,7 +118,7 @@ section {
   font-weight: 700;
   display: inline-flex;
 }
-.home-content .multiple-text{
+.home-content .multiple-text {
   margin-left: 10px;
 }
 .home-content h3 :nth-of-type(2) {
@@ -345,11 +345,11 @@ i#tailwind {
   border-radius: 50%;
   transition: 0.5s all ease-in-out;
 }
-.portfolio-layer a:hover{
+.portfolio-layer a:hover {
   background-color: var(--bg-color);
   transform: rotate(40deg);
 }
-.portfolio-layer a:hover i{
+.portfolio-layer a:hover i {
   color: var(--text-color);
 }
 .portfolio-layer a i {
@@ -428,9 +428,7 @@ i#tailwind {
 }
 .submit-container {
   position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 10%;
   width: 80%;
   height: 360px;
   background: #fff;
@@ -438,21 +436,11 @@ i#tailwind {
   animation: popup 1s ease-in-out;
 }
 @keyframes popup {
-  0% {
-    top: 35%;
-    opacity: 0;
+  from {
+    transform: scale(0);
   }
-  50% {
-    top: 37%;
-    opacity: 0.5;
-  }
-  75% {
-    top: 40%;
-    opacity: 0.8;
-  }
-  100% {
-    top: 43%;
-    opacity: 1;
+  to {
+    transform: scale(1);
   }
 }
 .submit-container i {
@@ -683,7 +671,7 @@ i#tailwind {
   .submit-container i {
     font-size: 90px;
   }
-  .submit-container p{
+  .submit-container p {
     margin: 0px 20px;
   }
   .contact {
@@ -711,10 +699,10 @@ i#tailwind {
   }
 }
 @media screen and (max-width: 553px) {
-  .submit-container{
+  .submit-container {
     height: 350px;
   }
-  .submit-container button{
+  .submit-container button {
     margin-top: 25px;
   }
 }
@@ -731,12 +719,13 @@ i#tailwind {
   .submit-container {
     width: 90%;
     height: 310px;
+    left: 5%;
   }
   .submit-container i {
     font-size: 70px;
     margin-top: -37px;
   }
-  .submit-container button{
+  .submit-container button {
     width: 90px;
     height: 38px;
     margin-top: 20px;
@@ -766,6 +755,7 @@ i#tailwind {
   }
   .submit-container {
     width: 95%;
+    left: 2.5%;
   }
   .footer {
     flex-direction: column-reverse;
@@ -777,7 +767,7 @@ i#tailwind {
     width: 95%;
     height: 320px;
   }
-  .submit-container p{
+  .submit-container p {
     margin: 0px 5px;
   }
 }
